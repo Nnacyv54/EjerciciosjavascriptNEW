@@ -14,13 +14,13 @@ function contarRepeticiones(cadena, caracter){
     return contador;
 }
 
-//solicitud de cadena de texto
+//solicitud de cadena 
 let cadenaText = prompt("Ingrese una cadena de texto:");
 
 //caracter a ser buscado
 let caracterAbuscar = prompt("Ingrese un caracter para buscar:");
 
-//contar las repeticiones el caracter dado
+//contar las repeticiones del caracter 
 const repeticiones = contarRepeticiones(cadenaText, caracterAbuscar);
 
 //indicar el resultado

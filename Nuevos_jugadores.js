@@ -53,9 +53,9 @@ class Jugador extends Persona {
 }
 
 class Entrenador extends Persona {
-    constructor(nombre, apellido, edad, aniosExperiencia, idFederacion) {
+    constructor(nombre, apellido, edad, tiempoExperiencia, idFederacion) {
       super(nombre, apellido, edad);
-      this.aniosExperiencia = aniosExperiencia;
+      this.tiempoExperiencia = tiempoExperiencia;
       if (idFederacion) {
         this.idFederacion = idFederacion;
       } else {
@@ -65,7 +65,7 @@ class Entrenador extends Persona {
 
     get Detalles() {
         super.getDetalles();
-        console.log(`Años de experiencia: ${this.aniosExperiencia}`);
+        console.log(`tiempo de experiencia: ${this.Experiencia}`);
         console.log(`ID de federación: ${this.idFederacion}`);
     }
 }
@@ -89,13 +89,13 @@ class Equipo {
 
 //Jugadores
 
-const jugador1 = new Jugador("Ana", "Lopez", 18, "Delantero");
-const jugador2 = new Jugador("Maria", "Gomez", 28, "Defensa");
-const jugador3 = new Jugador("Pedro", "Lopez", 30, "Medio");
-const jugador4 = new Jugador("Ana", "Martin", 22, "Delantero");
+const jugador1 = new Jugador("Ana", "Lopez", 19, "Delantero");
+const jugador2 = new Jugador("Tomas", "Lara", 18, "Defensa");
+const jugador3 = new Jugador("Byron", "Rosero", 29, "Medio");
+const jugador4 = new Jugador("Luis", "Martin", 20, "Delantero");
 
 // Entrenador
-const entrenador = new Entrenador("Carlos", "Sanchez", 45, 10, 12345);
+const entrenador = new Entrenador("Pedro", "Casanova", 45, 10, 12345);
 
 // Equipo
 const equipo = new Equipo(entrenador, [jugador1, jugador2, jugador3, jugador4]);

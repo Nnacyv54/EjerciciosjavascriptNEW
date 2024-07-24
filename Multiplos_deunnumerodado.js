@@ -3,7 +3,7 @@
 //Ejemplo si el número dado es 3 sus múltiplos serían 3,6,9,12,15…..21, etc.
 
 
-function mostrarMultiples(numero) {
+function indicarMultiplos(numero) {
     for (let i = 1; i <= 100; i++){
         if (i % numero === 0) {
             console.log(i);
@@ -16,5 +16,5 @@ let numeroDado = promt("Ingrese un numero entero:");
 
 numeroDado = parseInt(numeroDado);
 
-mostrarMultiples(numeroDado);
+mostrarMultiplos(numeroDado);
 

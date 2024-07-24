@@ -6,11 +6,11 @@
 // para este ejercicio se modifico los valores del ejemplo otorgado
 
 function invertirArray(array) {
-    const invertedArray = [];
+    const invertirArray = [];
     for (let i = array.length - 1; i >= 0; i--) {
-        invertedArray.push(array[i]);
+        invertirArray.push(array[i]);
     }
-    return invertedArray;
+    return invertirArray;
 }
 
 const arrayOriginal = [30, 8, 50, 73, 101, "cadena", 9];
