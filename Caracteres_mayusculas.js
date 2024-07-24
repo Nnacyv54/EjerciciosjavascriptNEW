@@ -10,12 +10,10 @@ function convertiraMayusculas(texto) {
         if (caracter === ".") {
             resultado += convertiraMayusculas? resultado.toUpperCase() : resultado;
             convertiraMayusculas = false; 
-        }else if (convertiraMayusculas) {
-         resultado += caracter.toUpperCase();
-        }else {
+        }
+        if(!convertiraMayusculas) {
             resultado += caracter;
         }
-        
     }
 
     return resultado;
